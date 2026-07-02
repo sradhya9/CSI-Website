@@ -6,7 +6,6 @@ const events = [
     { title: "Radiance '24", img: "/assets/radiance.png" },
     { title: "Motivational Talk", img: "/assets/motivational.png" },
 ];
-
 const EventCarousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [isPaused, setIsPaused] = useState(false);
