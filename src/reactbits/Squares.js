@@ -10,10 +10,8 @@ const Squares = ({
     className = ''
 }) => {
     const canvasRef = useRef(null);
-    const requestRef = useRef(null);
     const numSquaresX = useRef();
     const numSquaresY = useRef();
-    const gridOffset = useRef({ x: 0, y: 0 });
     const hoveredSquare = useRef(null);
 
     useEffect(() => {
