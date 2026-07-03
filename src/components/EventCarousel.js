@@ -25,9 +25,9 @@ const EventCarousel = () => {
 
     return (
         <div className="carousel-container" id="events">
-            {/* Header Image */}
+            {/* Header Text */}
             <div className="carousel-header">
-                <img src="/assets/events_bg.png" alt="Event Header" className="carousel-header-image" />
+                <h1 className="carousel-header-text">EVENTS</h1>
             </div>
 
             {/* Event Carousel */}
