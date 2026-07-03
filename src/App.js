@@ -1,14 +1,16 @@
 import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import ScrollToTop from "./components/ScrollToTop";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import MainHome from "./components/MainHome"; // Updated import
-import Events from "./components/Events"; // Events page
-import Team from "./components/Team";
-import Adastra from "./components/Adastra"; // Ad Astra event details
+import Events25 from "./components/Events25";
+import Events24 from "./components/Events24";
+import Events23 from "./components/Events23";
+import Team25 from "./components/Team25";
+import Team24 from "./components/Team24";
 import Software from "./components/Software";
 import EcoCanvas from "./components/EcoCanvas"; // EcoCanvas event details
 import ProjectExpo25 from "./components/ProjectExpo25"; // Project Expo 2025 event details
@@ -25,6 +27,7 @@ import Linkedin from "./components/Linkedin";
 import Resume from "./components/Resume";
 import Lensmaster from "./components/Lensmaster";
 import Radiance from "./components/Radiance";
+import EventDetails from "./components/EventDetails";
 
 const App = () => {
   useEffect(() => {
@@ -41,9 +44,14 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<MainHome />} /> {/* Updated Route */}
-          <Route path="/events" element={<Events />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/adastra" element={<Adastra />} />
+          <Route path="/events" element={<Navigate to="/events25" />} />
+          <Route path="/events25" element={<Events25 />} />
+          <Route path="/events24" element={<Events24 />} />
+          <Route path="/events23" element={<Events23 />} />
+          <Route path="/event/:eventId" element={<EventDetails />} />
+          <Route path="/team" element={<Navigate to="/team25" />} />
+          <Route path="/team25" element={<Team25 />} />
+          <Route path="/team24" element={<Team24 />} />
           <Route path="/software" element={<Software />} />
           <Route path="/about" element={<MainAboutUs />} /> {/* Updated Route */}
           <Route path="/contactus" element={<ContactUs />} /> {/* Updated Route */}
@@ -59,7 +67,7 @@ const App = () => {
           <Route path="/linkedin" element={<Linkedin />} />
           <Route path="/resume" element={<Resume />} />
           <Route path="/lensmaster" element={<Lensmaster />} />
-         <Route path="/radiance" element={<Radiance />} />
+          <Route path="/radiance" element={<Radiance />} />
           {/* Add more routes as needed */}
         </Routes>
       </main>

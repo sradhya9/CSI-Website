@@ -1,511 +1,298 @@
-/* Original CSS content (unchanged) */
-@font-face {
-    font-family: 'Sterion Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Sterion Regular'), url('../styles/Sterion-BLLld.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Iceberg';
-    src: local('Iceberg'), url('../styles/Iceberg-Regular.woff') format('woff');
-    font-style: normal;
-    font-weight: normal;
-}
-
-.events-heading-container {
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-.events-heading {
-    font-family: 'Sterion Regular', sans-serif;
-    font-size: 250px;
-    color: #ffffff;
-    letter-spacing: 4px;
-}
-
-.eventspage {
-    text-align: center;
-    padding: 50px 20px;
-    background: #000000;
-    min-height: 300vh;
+.events-section {
+    padding: 60px 20px;
     color: white;
+    background-color: #000000;
     position: relative;
+    min-height: 100vh;
 }
 
-/* Mouse Icon, Vertical Line, and Text */
-.mouse-container {
+.events-header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    top: 28%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
-}
-
-.event-details {
-    color: white;
-    font-size: 2rem;
-    font-weight: bold;
-    position: absolute;
-    white-space: nowrap;
-}
-
-/* Description styling */
-.event-description {
-    color: white;
-    font-size: 1rem;
-    font-family: sans-serif;
-    position: absolute;
-    top: 180px;
-    left: -75vh;
-    width: 450px;
-    text-align: left;
-}
-
-/* Software and Motivational description styling */
-.software-description {
-    color: white;
-    font-size: 1rem;
-    font-family: sans-serif;
-    position: absolute;
-    top: 580px;
-    left: 225px;
-    width: 450px;
-    text-align: right;
-}
-
-/* Button styling */
-.read-more-btn {
-    width: 200px;
-    height: 60px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    background: linear-gradient(0deg, #161616 0%, #272727 100%);
-    position: absolute;
-    top: 290px;
-    left: -75vh;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 10px;
+    height: calc(100vh - 70px);
+    /* 70px is the navbar height */
 }
-.read-more-btn-odd {
-    width: 200px;
-    height: 60px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    background: linear-gradient(0deg, #161616 0%, #272727 100%);
-    position: absolute;
-    top: 290px;
-    left: -75vh;
-    border: none;
-    cursor: pointer;
+
+.events-title {
+    font-family: 'Sterion', sans-serif;
+    font-size: 18vw;
+    /* Increased significantly to span the screen */
+    margin: 0;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+
+/* Mouse Scroll Icon */
+.scroll-indicator {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    margin-top: 20px;
     gap: 10px;
 }
 
-/* Software and Motivational button styling */
-.software-btn {
-    width: 200px;
-    height: 60px;
-    flex-shrink: 0;
-    border-radius: 16px;
-    background: linear-gradient(0deg, #161616 0%, #272727 100%);
-    position: absolute;
-    top: 690px;
-    left: 470px;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.read-more-btn span, .software-btn span {
-    color: #FFF;
-    -webkit-text-stroke-width: 0.89px;
-    -webkit-text-stroke-color: #FFF;
-    font-family: 'Lato', sans-serif;
-    font-size: 20.238px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-}
-
-.read-more-btn svg, .software-btn svg {
-    height: 30px;
-    width: 20px;
-}
-
-.read-more-btn:hover, .software-btn:hover {
-    background: linear-gradient(0deg, #272727 0%, #161616 100%);
-}
-
-/* Responsive Text Alignment */
-.left-text {
-    position: absolute;
-    left: -75vh;
-    width: 400px;
-    top: 100px;
-    font-family: 'Sterion Regular', sans-serif;
-    font-size: 4rem;
-    border-bottom: 2px solid white;
-}
-.left-text-odd {
-    right: 250px;
-    top: 590px;
-    transform: translateX(-50%);
-    font-family: 'Iceberg', sans-serif;
-    font-size: 2.5rem;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.right-text {
-    left: 250px;
-    top: 225px;
-    transform: translateX(-50%);
-    font-family: 'Iceberg', sans-serif;
-    font-size: 2.5rem;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.right-text-odd {
-    left: 225px;
-    top: 520px;
-    width: 400px;
-    font-family: 'Sterion Regular', sans-serif;
-    font-size: 4rem;
-    border-bottom: 2px solid white;
-}
-
-.right-text-odd-moti {
-    left: 200px;
-    top: 1425px;
-    width: 400px;
-    font-family: 'Sterion Regular', sans-serif;
-    font-size: 3.6rem;
-    border-bottom: 2px solid white;
-}
-
-/* Software event specific styling */
-.right-text:nth-child(5) {
-    top: 550px;
-}
-
-.left-text:nth-child(8) {
-    top: 550px;
-    border-bottom: none;
-}
-
-/* Radiance event specific styling */
-.left-text:nth-child(9) {
-    top: 1000px;
-}
-
-.event-description:nth-child(10) {
-    top: 1080px;
-}
-
-.read-more-btn:nth-child(11) {
-    top: 1190px;
-}
-
-.right-text:nth-child(12) {
-    top: 1125px;
-}
-
-/* Motivational event specific styling */
-.software-description:nth-child(14) {
-    top: 1480px;
-}
-
-.software-btn:nth-child(15) {
-    top: 1605px;
-    left: 470px;
-}
-
-.left-text-odd:nth-child(16) {
-    top: 1450px;
-    border-bottom: none;
-}
-
-/* Horizontal lines for each event */
-.horizontal-line {
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    width: 14vw;
-    height: 0;
-    border-top: 3px dashed white;
-    transform: translateY(-50%);
-}
-
-.software-horizontal-line {
-    position: absolute;
-    top: 470px;
-    right: 50%;
-    width: 14vw;
-    height: 0;
-    border-top: 3px dashed white;
-    transform: translateY(50%);
-}
-
-.radiance-horizontal-line {
-    position: absolute;
-    top: 1000px;
-    left: 50%;
-    width: 14vw;
-    height: 0;
-    border-top: 3px dashed white;
-    transform: translateY(-50%);
-}
-
-.motivational-horizontal-line {
-    position: absolute;
-    top: 1330px;
-    right: 50%;
-    width: 14vw;
-    height: 0;
-    border-top: 3px dashed white;
-    transform: translate(50%);
-}
-
-.date-icon {
-    width: 50px;
-    height: 50px;
-}
-
-.centeredimage {
-    width: 100px;
-    height: auto;
+.mouse-icon {
+    width: 36px;
+    height: 56px;
+    border: 2px solid #aaa;
+    border-radius: 18px;
     position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.mouse-wheel {
+    width: 6px;
+    height: 12px;
+    background-color: #aaa;
+    border-radius: 3px;
+    margin-top: 8px;
+    animation: scrollDown 1.5s infinite;
+}
+
+@keyframes scrollDown {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(12px);
+        opacity: 0;
+    }
+}
+
+.scroll-text {
+    font-size: 14px;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Timeline Layout */
+.timeline-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-bottom: 80px;
+    position: relative;
+    min-height: 150px;
+}
+
+.timeline-col {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.left-col {
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+
+.right-col {
+    justify-content: flex-start;
+    padding-left: 40px;
+}
+
+.timeline-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -8px;
+    /* Half of 16px dot width */
+    margin-top: -8px;
+    /* Half of 16px dot height */
     z-index: 2;
 }
 
-/* Vertical Line */
-.verticalline {
-    width: 2px;
-    background-color: white;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    height: calc(210vh - 20%);
-    border-left: 2px dashed white;
-}
-
-/* Small Dot on the Line */
-.line-dot {
-    width: 20px;
-    height: 20px;
-    background-color: white;
+.timeline-dot {
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
     border-radius: 50%;
-    position: absolute;
-    top: 6.25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-/* Events Section */
-.eventstitle {
-    font-size: 2.5rem;
-    color: white;
-    margin-bottom: 30px;
-}
-
-/* Events Container */
-.eventscontainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
 }
 
 /* Event Card */
-.eventcard {
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    overflow: hidden;
-    width: 300px;
-    transition: transform 0.3s ease-in-out;
+.event-card {
+    max-width: 550px;
 }
 
-.eventcard:hover {
-    transform: scale(1.05);
+.event-title {
+    font-family: 'Sterion', sans-serif;
+    font-size: 48px;
+    margin: 0 0 15px 0;
+    color: #ffffff;
+    letter-spacing: 1px;
 }
 
-/* Event Image */
-.eventimage {
+.event-desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cccccc;
+    margin: 0 0 20px 0;
+}
+
+.read-more-btn {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Date Card */
+.date-card {
+    display: flex;
+    align-items: center;
     width: 100%;
-    height: 180px;
-    object-fit: cover;
 }
 
-/* Event Info */
-.eventinfo {
-    padding: 15px;
+.date-card.left-align {
+    justify-content: flex-start;
 }
 
-.eventdate {
-    font-weight: bold;
-    color: #007bff;
-    margin: 5px 0;
+.date-card.right-align {
+    justify-content: flex-end;
 }
 
-.eventdescription {
-    color: #555;
+.date-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
-/* Mobile-Optimized Styles (up to 480px) */
-@media screen and (max-width: 480px) {
-    .eventspage {
-        padding: 20px 10px;
-        min-height: auto; /* Allow natural height based on content */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+.date-text {
+    font-family: 'Sterion', sans-serif;
+    /* Fallback to orbitron or normal if Sterion doesn't look like the design date font */
+    font-size: 36px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+/* Dashed Connection Line */
+.dashed-line {
+    flex-grow: 1;
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 50%, transparent 50%);
+    background-size: 12px 3px;
+    background-repeat: repeat-x;
+    min-width: 30px;
+}
+
+.date-card.left-align .dashed-line {
+    margin-right: 20px;
+    margin-left: -40px;
+    /* Pulls the line across the column padding to touch the center */
+}
+
+.date-card.right-align .dashed-line {
+    margin-left: 20px;
+    margin-right: -40px;
+    /* Pulls the line across the column padding to touch the center */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .events-header {
+        height: auto;
+        padding: 40px 0 60px 0;
     }
 
-    .events-heading-container {
-        margin-top: 20px;
-        margin-bottom: 10px;
+    .events-title {
+        font-size: 72px;
     }
 
-    .events-heading {
-        font-size: 60px; /* Smaller, readable heading */
-        letter-spacing: 1px;
+    .date-text {
+        font-size: 24px;
     }
 
-    .mouse-container {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: none;
+    .timeline-line {
+        left: 20px;
+    }
+
+    .timeline-col {
         width: 100%;
-        display: flex;
+        padding-left: 60px !important;
+        padding-right: 0 !important;
+        justify-content: flex-start !important;
+    }
+
+    .event-card {
+        text-align: left !important;
+    }
+
+    .event-title, .event-desc {
+        text-align: left !important;
+    }
+
+    .left-col {
+        display: block;
+        /* Stack event card and date */
+    }
+
+    .right-col {
+        display: block;
+    }
+
+    .timeline-item {
         flex-direction: column;
-        align-items: center;
-        gap: 20px;
+        align-items: flex-start;
+        margin-bottom: 60px;
     }
 
-    .verticalline, .line-dot, .horizontal-line, .software-horizontal-line, 
-    .radiance-horizontal-line, .motivational-horizontal-line {
-        display: none; /* Remove timeline elements for simplicity */
+    .timeline-center {
+        left: 20px;
+        top: 0;
+        transform: translate(-50%, 0);
     }
 
-    .centeredimage {
-        width: 50px; /* Smaller mouse icon */
-        margin: 10px 0;
+    .date-card {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        justify-content: flex-start !important;
     }
 
-    /* Event Card Styling for Mobile */
-    .event-details, .event-description, .software-description, 
-    .read-more-btn, .software-btn, .read-more-btn-odd, 
-    .left-text, .right-text, .left-text-odd, .right-text-odd, .right-text-odd-moti {
-        position: relative;
-        top: auto;
-        left: auto;
-        right: auto;
-        transform: none;
-        width: 90%;
-        margin: 10px auto;
-        text-align: center;
-        white-space: normal;
+    .dashed-line {
+        display: none;
     }
 
-    .event-details {
-        font-size: 1.5rem;
-        font-family: 'Sterion Regular', sans-serif;
-        border-bottom: 1px solid white;
-        padding-bottom: 5px;
-    }
-
-    .event-description, .software-description {
-        font-size: 0.95rem;
-        font-family: 'Lato', sans-serif;
-        line-height: 1.5;
-        margin: 10px auto;
-    }
-
-    .read-more-btn, .software-btn, .read-more-btn-odd {
-        width: 160px;
-        height: 45px;
-        border-radius: 12px;
-        margin: 15px auto;
-    }
-
-    .read-more-btn span, .software-btn span {
-        font-size: 16px;
-        -webkit-text-stroke-width: 0.5px;
-    }
-
-    .read-more-btn svg, .software-btn svg {
-        height: 20px;
-        width: 15px;
-    }
-
-    .date-icon {
-        width: 30px;
-        height: 30px;
-        vertical-align: middle;
-        margin-right: 8px;
-    }
-
-    /* Specific Event Adjustments */
-    .left-text:nth-child(8),
-    .right-text:nth-child(5),
-    .left-text:nth-child(9),
-    .event-description:nth-child(10),
-    .read-more-btn:nth-child(11),
-    .right-text:nth-child(12),
-    .software-description:nth-child(14),
-    .software-btn:nth-child(15),
-    .left-text-odd:nth-child(16) {
-        position: relative;
-        top: auto;
-        left: auto;
-        right: auto;
-        margin: 10px auto;
-    }
-
-    /* Group each event into a card-like container */
-    .mouse-container > div, .mouse-container > p, .mouse-container > button {
-        width: 90%;
-        padding: 15px;
-        background: rgba(255, 255, 255, 0.1); /* Subtle background for card effect */
-        border-radius: 10px;
-        margin-bottom: 20px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Ensure AOS animations are subtle on mobile */
-    [data-aos] {
-        transition-duration: 600ms;
-    }
-
-    .eventstitle {
-        font-size: 1.8rem;
-        margin: 20px 0;
-    }
-
-    .eventcard {
-        width: 90%;
-        margin: 0 auto 20px;
+    .scroll-indicator {
+        display: none;
     }
 }

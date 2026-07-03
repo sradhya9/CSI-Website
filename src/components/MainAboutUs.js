@@ -1,119 +1,93 @@
-import React from "react";
-import "../styles/About.css";
-import leftImage from "../assets/knowcsi.png";
-import missionImage from "../assets/frames.png";
+import React from 'react';
+import '../styles/About.css';
 import Particles from '../reactbits/Particles';
 
-const About = () => {
+const AboutUs = () => {
   return (
-    <section className="about-csi">
-      <div style={{ width: '100%', height: '100%', position: 'absolute' }}>
-        <Particles
-          particleColors={['#ffffff', '#ffffff']}
-          particleCount={200}
-          particleSpread={10}
-          speed={0.1}
-          particleBaseSize={100}
-          moveParticlesOnHover={true}
-          alphaParticles={false}
-          disableRotation={false}
-        />
-      </div>
-      <div className="about-container"data-aos="fade-up">
-        {/* Optional SVGs */}
-        <div className="svg-container-top-right" x>
-          {/* Optional: insert SVG here if needed */}
-        </div>
+    <div className="about-page">
+      <Particles
+        particleColors={['#ffffff', '#ffffff']}
+        particleCount={1000}
+        particleSpread={10}
+        speed={0.1}
+        particleBaseSize={100}
+        moveParticlesOnHover={true}
+        alphaParticles={true}
+        disableRotation={false}
+      />
+      <div className="about-container">
 
-        <div className="about-csi-contents" data-aos="fade-up">
-          {/* Image Row */}
-          <div className="about-csi-images1">
-            <img src={leftImage} alt="Left" className="about-csi-image1 left" />
+        {/* Title Section */}
+        <div className="about-header-section">
+          <div className="about-title-wrapper">
+            <div className="title-left">
+              <div className="know-more">
+                <span>K</span><span>N</span><span>O</span><span>W</span>
+                <span className="spacer"></span>
+                <span>M</span><span>O</span><span>R</span><span>E</span>
+              </div>
+              <div className="about-text">ABOUT</div>
+            </div>
+            <div className="title-right">
+              <div className="csi-text">CSI</div>
+              <div className="mbcet-text">MBCET</div>
+            </div>
           </div>
-
-          {/* Description */}
-          <p className="about-csi-texts">
-            The Computer Society of India (CSI) Student Branch at Mar Baselios
-            College of Engineering & Technology (MBCET) is a dynamic community
-            committed to nurturing student interest and development in Computer
-            Science and related disciplines. Founded on 24th September 2004, we
-            are proud to be the largest and most active student branch in Kerala.
+          <p className="about-description">
+            The Computer Society of India (CSI) Student Branch at Mar Baselios College of Engineering & Technology (MBCET) is a dynamic community committed to nurturing student interest and development in Computer Science and related disciplines. Founded on 24<sup>th</sup> September 2004, we are proud to be the largest and most active student branch in Kerala.
           </p>
         </div>
 
-        {/* Mission Section */}
-        <div className="mission-section" data-aos="fade-up">
-          <img src={missionImage} alt="Our Mission" className="mission-bg" />
-          <div className="mission-overlay">
-            <h2 className="mission-heading">OUR MISSION</h2>
-            <ul className="mission-list">
-              <li>
-                Facilitating knowledge distribution through workshops, seminars,
-                and expert-led lectures.
-              </li>
-              <li>
-                Promoting the development of practical skills through coding
-                competitions, hackathons, and hands-on training sessions.
-              </li>
-              <li>
-                Creating opportunities for peer interaction and collaboration
-                through diverse events and activities.
-              </li>
-              <li>
-                Bridging the gap between academia and industry by fostering
-                connections between students and industry professionals.
-              </li>
-              <li>
-                Enhancing the IT landscape in Kerala by cultivating a culture of
-                innovation and excellence.
-              </li>
-            </ul>
-          </div>
-        </div>
+        {/* Cards Section */}
+        <div className="about-cards-section">
 
-        <div className="mission-section" data-aos="fade-up">
-          <img src={missionImage} alt="Our Mission" className="mission-bg" />
-          <div className="mission-overlay">
-            <h2 className="mission-heading">What We Stand For</h2>
-            <ul className="mission-list">
-              <li>
-                <b>Innovation:</b> Encouraging creative thinking and adoption of emerging technologies to drive solutions.
-              </li>
-              <li>
-                <b>Collaboration:</b> Fostering teamwork and learning through group initiatives and community engagement.
-              </li>
-              <li>
-                <b>Inclusivity:</b> Building a space where diverse perspectives are respected and every voice is valued.
-              </li>
-              <li>
-                <b>Empowerment:</b> Providing the tools and opportunities for individuals to grow, lead, and make an impact.
-              </li>
-              <li>
-                <b>Knowledge Sharing:</b> Promoting continuous learning through dialogue, peer support, and interactive events.
-              </li>
+          {/* Card 1 */}
+          <div className="about-card">
+            <h2 className="card-title">
+              <div>OUR</div>
+              <div>MISSION</div>
+            </h2>
+            <ul className="card-list">
+              <li>Facilitating knowledge distribution through workshops, seminars, and expert-led lectures.</li>
+              <li>Promoting the development of practical skills through coding competitions, hackathons, and hands-on training sessions.</li>
+              <li>Creating opportunities for peer interaction and collaboration through diverse events and activities.</li>
+              <li>Bridging the gap between academia and industry by fostering connections between students and industry professionals.</li>
+              <li>Enhancing the IT landscape in Kerala by cultivating a culture of innovation and excellence.</li>
             </ul>
           </div>
-        </div>
-        <div className="mission-section" data-aos="fade-up">
-          <img src={missionImage} alt="Our Mission" className="mission-bg" />
-          <div className="mission-overlay">
-            <h2 className="mission-heading">Why JOIN CSI</h2>
-            <ul className="mission-list">
-              <li>
-                Our team is composed of dedicated students and faculty advisors who work together to deliver impactful programs and initiatives.
-              </li>
-              <li>
-                Joining the CSI Student Branch provides opportunities to participate in events, access workshops, and connect with peers and professionals in the field.
-              </li>
-              <li>
-                We encourage all students interested in computer science and technology to join CSI and gain a network of like-minded individuals.
-              </li>
+
+          {/* Card 2 */}
+          <div className="about-card">
+            <h2 className="card-title">
+              <div>WHAT WE</div>
+              <div>STAND FOR</div>
+            </h2>
+            <ul className="card-list">
+              <li>Innovation</li>
+              <li>Collaboration</li>
+              <li>Inclusivity</li>
+              <li>Empowerment</li>
+              <li>Knowledge Sharing</li>
             </ul>
           </div>
+
+          {/* Card 3 */}
+          <div className="about-card">
+            <h2 className="card-title">
+              <div>WHY</div>
+              <div>JOIN CSI</div>
+            </h2>
+            <ul className="card-list">
+              <li>Our team is composed of dedicated students and faculty advisors who work together to deliver impactful programs and initiatives.</li>
+              <li>Joining the CSI Student Branch provides opportunities to participate in events, access workshops, and connect with peers and professionals in the field.</li>
+              <li>We encourage all students interested in computer science and technology to join CSI and gain a network of like-minded individuals.</li>
+            </ul>
+          </div>
+
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default About;
+export default AboutUs;

@@ -9,12 +9,12 @@ const AboutCSI = () => {
     return (
         <section id="about" className="about-csi">
             {/* SVG in the top right corner */}
-            <div className="svg-container-top-right"data-aos="fade-left">
+            <div className="svg-container-top-right" data-aos="fade-left">
                 <TopRightLogo />
             </div>
 
             {/* SVG in the bottom left corner */}
-            <div className="svg-container-bottom-left"data-aos="fade-right">
+            <div className="svg-container-bottom-left" data-aos="fade-right">
                 <BottomLeftLogo />
             </div>
 
@@ -22,8 +22,8 @@ const AboutCSI = () => {
             <div className="about-csi-content">
                 {/* Image Row */}
                 <div className="about-csi-images">
-                    <img src={leftImage} alt="Left_Image" className="about-csi-image left" />
-                    <img src={rightImage} alt="Right_Image" className="about-csi-image right" />
+                    <img src={leftImage} alt="Left_Image" className="about-csi-image left-img" />
+                    <img src={rightImage} alt="Right_Image" className="about-csi-image right-img" />
                 </div>
 
                 {/* Description */}

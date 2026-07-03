@@ -6,6 +6,8 @@ import logoImage from "../assets/logo.png"; // Logo image
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [eventsOpen, setEventsOpen] = useState(false);
+    const [teamOpen, setTeamOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
     const location = useLocation();
     const navigate = useNavigate();
@@ -44,8 +46,22 @@ const Header = () => {
                 <nav className="nav">
                     <ul>
                         <li><Link to="/">Home</Link></li>
-                        <li><Link to="/events">Events</Link></li>
-                        <li><Link to="/team">Team</Link></li>
+                        <li className="dropdown">
+                            <span className="dropdown-title">Events <span className="arrow">▼</span></span>
+                            <ul className="dropdown-menu">
+                                <li><Link to="/events25">2025</Link></li>
+                                <li><Link to="/events24">2024</Link></li>
+                                <li><Link to="/events23">2023</Link></li>
+                            </ul>
+                        </li>
+                        <li className="dropdown">
+                            <span className="dropdown-title">Team <span className="arrow">▼</span></span>
+                            <ul className="dropdown-menu">
+                                <li><Link to="/team25">2025</Link></li>
+                                <li><Link to="/team24">2024</Link></li>
+                                <li><Link to="/team23">2023</Link></li>
+                            </ul>
+                        </li>
                         <li><Link to="/about">About Us</Link></li>
                         <li><a href="#join" className="join-btn" onClick={(e) => { e.preventDefault(); handleScrollToSection("join"); }}>Join CSI</a></li>
                     </ul>
@@ -67,8 +83,30 @@ const Header = () => {
                     <nav className={`mobile-nav ${menuOpen ? "open" : ""}`}>
                         <ul>
                             <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
-                            <li><Link to="/events" onClick={() => setMenuOpen(false)}>Events</Link></li>
-                            <li><Link to="/team" onClick={() => setMenuOpen(false)}>Team</Link></li>
+                            <li className="mobile-dropdown">
+                                <div className="mobile-dropdown-title" onClick={() => setEventsOpen(!eventsOpen)}>
+                                    Events <span className="arrow">{eventsOpen ? '▲' : '▼'}</span>
+                                </div>
+                                {eventsOpen && (
+                                    <ul className="mobile-dropdown-menu">
+                                        <li><Link to="/events25" onClick={() => setMenuOpen(false)}>2025</Link></li>
+                                        <li><Link to="/events24" onClick={() => setMenuOpen(false)}>2024</Link></li>
+                                        <li><Link to="/events23" onClick={() => setMenuOpen(false)}>2023</Link></li>
+                                    </ul>
+                                )}
+                            </li>
+                            <li className="mobile-dropdown">
+                                <div className="mobile-dropdown-title" onClick={() => setTeamOpen(!teamOpen)}>
+                                    Team <span className="arrow">{teamOpen ? '▲' : '▼'}</span>
+                                </div>
+                                {teamOpen && (
+                                    <ul className="mobile-dropdown-menu">
+                                        <li><Link to="/team25" onClick={() => setMenuOpen(false)}>2025</Link></li>
+                                        <li><Link to="/team24" onClick={() => setMenuOpen(false)}>2024</Link></li>
+                                        <li><Link to="/team23" onClick={() => setMenuOpen(false)}>2023</Link></li>
+                                    </ul>
+                                )}
+                            </li>
                             <li><Link to="/about" onClick={() => setMenuOpen(false)}>About Us</Link></li>
                             <li><a href="#join" className="join-btn" onClick={(e) => { e.preventDefault(); handleScrollToSection("join"); }}>Join CSI</a></li>
                         </ul>

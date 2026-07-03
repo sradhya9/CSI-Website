@@ -1,24 +1,27 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/EventCarousel.css";
 
 const events = [
-    { title: "Software Testing", img: "/assets/software.png" },
-    { title: "Radiance '24", img: "/assets/radiance.png" },
-    { title: "Motivational Talk", img: "/assets/motivational.png" },
+    { id: "software", title: "Software Testing", img: "/assets/software.png" },
+    { id: "radiance", title: "Radiance '24", img: "/assets/radiance.png" },
+    { id: "motivational", title: "Motivational Talk", img: "/assets/motivational.png" },
 ];
 const EventCarousel = () => {
-    const [activeIndex, setActiveIndex] = useState(0);
-    const [isPaused, setIsPaused] = useState(false);
+    const [activeIndex, setActiveIndex] = useState(1); // Set Radiance '24 as default (index 1)
+    const [isAnimating, setIsAnimating] = useState(false);
+    const navigate = useNavigate();
 
-    useEffect(() => {
-        if (isPaused) return; // Stop the interval if paused
+    const handleHover = (index) => {
+        if (isAnimating || index === activeIndex) return;
+        setActiveIndex(index);
+        setIsAnimating(true);
+        setTimeout(() => setIsAnimating(false), 600); // 600ms matches the CSS transition
+    };
 
-        const interval = setInterval(() => {
-            setActiveIndex((prevIndex) => (prevIndex + 1) % events.length);
-        }, 2500);
-
-        return () => clearInterval(interval);
-    }, [isPaused]); // Runs again when `isPaused` changes
+    const handleClick = (id) => {
+        navigate(`/event/${id}`);
+    };
 
     return (
         <div className="carousel-container" id="events">
@@ -42,8 +45,8 @@ const EventCarousel = () => {
                             key={index}
                             className={`event_box ${position}`}
                             style={{ backgroundImage: `url(${event.img})` }}
-                            onMouseEnter={() => setIsPaused(true)}  // Pause on hover
-                            onMouseLeave={() => setIsPaused(false)} // Resume on leave
+                            onMouseEnter={() => handleHover(index)}
+                            onClick={() => handleClick(event.id)}
                         >
                             <h3>{event.title}</h3>
                         </div>

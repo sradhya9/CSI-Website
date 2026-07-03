@@ -38,7 +38,7 @@
 .event-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     border-radius: 12px;
 }
@@ -50,15 +50,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(0, 0, 0, 0);
-    /* No background */
     color: #FFFFFF;
-    /* Gold color for contrast */
     font-weight: bold;
     padding: 8px 10px;
     border-radius: 6px;
     text-align: center;
-    width: 60%;
-    /* Reduced width */
+    width: 80%;
     text-transform: uppercase;
     font-size: 1.2rem;
     line-height: 1.2;
@@ -67,33 +64,28 @@
 /* 🌍 RESPONSIVENESS */
 @media (max-width: 768px) {
     .event-item {
-        width: 75%;
-        height: 180px;
+        width: 200px;
+        height: 200px;
     }
 
     .event-text {
         font-size: 1rem;
-        padding: 0px 7px;
-        width: 50%;
-        /* Further reduced width on smaller screens */
+        width: 80%;
     }
 }
 
 @media (max-width: 480px) {
     .event-item {
-        width: 150px;
-        height: 170px;
+        width: 180px;
+        height: 180px;
     }
 
     .event-container {
-        gap: 25px;
-        /* Reduced gap for better layout on small screens */
+        gap: 30px;
     }
 
     .event-text {
-        font-size: 0.8rem;
-        padding: 0px 8px;
-        width: 45%;
-        /* More compact width */
+        font-size: 0.9rem;
+        width: 85%;
     }
 }
