@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Sterion Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sterion Regular'), url('../styles/Sterion-BLLld.woff') format('woff');
+}
+
 .events-section {
     padding: 60px 20px;
     color: white;
@@ -16,7 +23,7 @@
 }
 
 .events-title {
-    font-family: 'Sterion', sans-serif;
+    font-family: 'Sterion Regular', sans-serif;
     font-size: 18vw;
     /* Increased significantly to span the screen */
     margin: 0;
@@ -144,7 +151,7 @@
 }
 
 .event-title {
-    font-family: 'Sterion', sans-serif;
+    font-family: 'Sterion Regular', sans-serif;
     font-size: 48px;
     margin: 0 0 15px 0;
     color: #ffffff;
@@ -198,7 +205,7 @@
 }
 
 .date-text {
-    font-family: 'Sterion', sans-serif;
+    font-family: 'Sterion Regular', sans-serif;
     /* Fallback to orbitron or normal if Sterion doesn't look like the design date font */
     font-size: 36px;
     color: #ffffff;

@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Sterion Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sterion Regular'), url('../styles/Sterion-BLLld.woff') format('woff');
+}
+
 .about-page {
   min-height: 100vh;
   background-color: #050508;
@@ -65,7 +72,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  font-family: 'Sterion', sans-serif;
+  font-family: 'Sterion Regular', sans-serif;
   font-size: 20px;
   line-height: 1;
   letter-spacing: normal;
@@ -80,7 +87,7 @@
 }
 
 .about-text {
-  font-family: 'Sterion', sans-serif;
+  font-family: 'Sterion Regular', sans-serif;
   font-size: 60px;
   line-height: 0.8;
   letter-spacing: 2px;
@@ -95,14 +102,14 @@
 }
 
 .csi-text {
-  font-family: 'Sterion', sans-serif;
+  font-family: 'Sterion Regular', sans-serif;
   font-size: 48px;
   line-height: 0.8;
   letter-spacing: 2px;
 }
 
 .mbcet-text {
-  font-family: 'Sterion', sans-serif;
+  font-family: 'Sterion Regular', sans-serif;
   font-size: 22px;
   line-height: 1;
   letter-spacing: 4px;
@@ -152,7 +159,7 @@
 }
 
 .card-title {
-  font-family: 'Sterion', sans-serif;
+  font-family: 'Sterion Regular', sans-serif;
   font-size: 40px;
   margin-bottom: 30px;
   line-height: 1.1;
