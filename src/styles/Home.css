@@ -1,9 +1,9 @@
 /* --- Hero Section --- */
 @font-face {
-    font-family: 'Sterion Regular';
+    font-family: 'Sterion';
     font-style: normal;
     font-weight: normal;
-    src: local('Sterion Regular'), url('../styles/Sterion-BLLld.woff') format('woff');
+    src: local('Sterion'), url('./Sterion-BLLld.woff') format('woff');
 }
 
 .csi-hero {
