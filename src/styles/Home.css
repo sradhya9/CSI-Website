@@ -1,4 +1,11 @@
 /* --- Hero Section --- */
+@font-face {
+    font-family: 'Sterion Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Sterion Regular'), url('../styles/Sterion-BLLld.woff') format('woff');
+}
+
 .csi-hero {
     display: flex;
     flex-direction: column;
