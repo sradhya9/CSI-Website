@@ -379,12 +379,12 @@ body {
     }
 
     .team-title-above {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         margin-top: 60px;
     }
 
     .team-title {
-        font-size: 5rem;
+        font-size: 4rem;
         margin-bottom: 15px;
     }
 
@@ -406,5 +406,6 @@ body {
         width: 100%;
         max-width: 100%;
         height: auto;
+        top: 60px;
     }
 }

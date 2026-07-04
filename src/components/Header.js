@@ -85,7 +85,7 @@ const Header = () => {
                             <li><Link to="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
                             <li className="mobile-dropdown">
                                 <div className="mobile-dropdown-title" onClick={() => setEventsOpen(!eventsOpen)}>
-                                    Events <span className="arrow">{eventsOpen ? '▲' : '▼'}</span>
+                                    Events
                                 </div>
                                 {eventsOpen && (
                                     <ul className="mobile-dropdown-menu">
@@ -97,13 +97,13 @@ const Header = () => {
                             </li>
                             <li className="mobile-dropdown">
                                 <div className="mobile-dropdown-title" onClick={() => setTeamOpen(!teamOpen)}>
-                                    Team <span className="arrow">{teamOpen ? '▲' : '▼'}</span>
+                                    Team
                                 </div>
                                 {teamOpen && (
                                     <ul className="mobile-dropdown-menu">
+                                        <li><Link to="/team26" onClick={() => setMenuOpen(false)}>2026</Link></li>
                                         <li><Link to="/team25" onClick={() => setMenuOpen(false)}>2025</Link></li>
                                         <li><Link to="/team24" onClick={() => setMenuOpen(false)}>2024</Link></li>
-                                        <li><Link to="/team23" onClick={() => setMenuOpen(false)}>2023</Link></li>
                                     </ul>
                                 )}
                             </li>
