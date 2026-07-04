@@ -47,7 +47,7 @@ const Header = () => {
                     <ul>
                         <li><Link to="/">Home</Link></li>
                         <li className="dropdown">
-                            <span className="dropdown-title">Events <span className="arrow">▼</span></span>
+                            <span className="dropdown-title">Events</span>
                             <ul className="dropdown-menu">
                                 <li><Link to="/events25">2025</Link></li>
                                 <li><Link to="/events24">2024</Link></li>
@@ -55,11 +55,11 @@ const Header = () => {
                             </ul>
                         </li>
                         <li className="dropdown">
-                            <span className="dropdown-title">Team <span className="arrow">▼</span></span>
+                            <span className="dropdown-title">Team</span>
                             <ul className="dropdown-menu">
+                                <li><Link to="/team26">2026</Link></li>
                                 <li><Link to="/team25">2025</Link></li>
                                 <li><Link to="/team24">2024</Link></li>
-                                <li><Link to="/team23">2023</Link></li>
                             </ul>
                         </li>
                         <li><Link to="/about">About Us</Link></li>

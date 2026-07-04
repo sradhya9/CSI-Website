@@ -9,8 +9,8 @@ import MainHome from "./components/MainHome"; // Updated import
 import Events25 from "./components/Events25";
 import Events24 from "./components/Events24";
 import Events23 from "./components/Events23";
+import Team26 from "./components/Team26";
 import Team25 from "./components/Team25";
-import Team24 from "./components/Team24";
 import Software from "./components/Software";
 import EcoCanvas from "./components/EcoCanvas"; // EcoCanvas event details
 import ProjectExpo25 from "./components/ProjectExpo25"; // Project Expo 2025 event details
@@ -19,7 +19,7 @@ import AGM2025 from "./components/AGM2025"; // AGM 2025 event details
 import TheoreticalComputerScience from "./components/TheoreticalComputerScience"; // Theoretical Computer Science event details
 import MainAboutUs from "./components/MainAboutUs"; // About Us page
 import ContactUs from "./components/ContactUs";
-import Team23 from "./components/Team23";
+import Team24 from "./components/Team24";
 import Encrypt from "./components/Encrypt";
 import Thunkable from "./components/Thunkable";
 import Gamedev from "./components/Gamedev";
@@ -50,12 +50,12 @@ const App = () => {
           <Route path="/events23" element={<Events23 />} />
           <Route path="/event/:eventId" element={<EventDetails />} />
           <Route path="/team" element={<Navigate to="/team25" />} />
+          <Route path="/team26" element={<Team26 />} />
           <Route path="/team25" element={<Team25 />} />
-          <Route path="/team24" element={<Team24 />} />
           <Route path="/software" element={<Software />} />
           <Route path="/about" element={<MainAboutUs />} /> {/* Updated Route */}
           <Route path="/contactus" element={<ContactUs />} /> {/* Updated Route */}
-          <Route path="/team23" element={<Team23 />} /> {/* Team 2023 page */}
+          <Route path="/team24" element={<Team24 />} /> {/* Team 2023 page */}
           <Route path="/ecocanvas" element={<EcoCanvas />} /> {/* EcoCanvas event details */}
           <Route path="/projectexpo25" element={<ProjectExpo25 />} /> {/* Project Expo 2025 event details */}
           <Route path="/influenceofai" element={<InfluenceofAI />} /> {/* Influence of AI event details */}

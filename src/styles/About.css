@@ -7,7 +7,7 @@
 
 .about-page {
   min-height: 100vh;
-  background-color: #050508;
+  background-color: transparent;
   color: #ffffff;
   position: relative;
   overflow: hidden;
@@ -130,14 +130,8 @@
 }
 
 .about-card {
-  background: rgba(10, 10, 20, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
   padding: 40px;
   position: relative;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
 }
 
 .about-card::before {

@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/About.css';
 import Particles from '../reactbits/Particles';
+import BorderGlow from '../reactbits/BorderGlow';
 
 const AboutUs = () => {
   return (
@@ -42,7 +43,7 @@ const AboutUs = () => {
         <div className="about-cards-section">
 
           {/* Card 1 */}
-          <div className="about-card">
+          <BorderGlow className="about-card" backgroundColor="rgba(10, 10, 20, 0.6)" glowColor="234 100 50" colors={['#001AFF', '#000009', '#FFFFFF']} fillOpacity={0}>
             <h2 className="card-title">
               <div>OUR</div>
               <div>MISSION</div>
@@ -54,10 +55,10 @@ const AboutUs = () => {
               <li>Bridging the gap between academia and industry by fostering connections between students and industry professionals.</li>
               <li>Enhancing the IT landscape in Kerala by cultivating a culture of innovation and excellence.</li>
             </ul>
-          </div>
+          </BorderGlow>
 
           {/* Card 2 */}
-          <div className="about-card">
+          <BorderGlow className="about-card" backgroundColor="rgba(10, 10, 20, 0.6)" glowColor="234 100 50" colors={['#001AFF', '#4DA6FF', '#FFFFFF']} fillOpacity={0}>
             <h2 className="card-title">
               <div>WHAT WE</div>
               <div>STAND FOR</div>
@@ -69,10 +70,10 @@ const AboutUs = () => {
               <li>Empowerment</li>
               <li>Knowledge Sharing</li>
             </ul>
-          </div>
+          </BorderGlow>
 
           {/* Card 3 */}
-          <div className="about-card">
+          <BorderGlow className="about-card" backgroundColor="rgba(10, 10, 20, 0.6)" glowColor="234 100 50" colors={['#001AFF', '#4DA6FF', '#FFFFFF']} fillOpacity={0}>
             <h2 className="card-title">
               <div>WHY</div>
               <div>JOIN CSI</div>
@@ -82,7 +83,7 @@ const AboutUs = () => {
               <li>Joining the CSI Student Branch provides opportunities to participate in events, access workshops, and connect with peers and professionals in the field.</li>
               <li>We encourage all students interested in computer science and technology to join CSI and gain a network of like-minded individuals.</li>
             </ul>
-          </div>
+          </BorderGlow>
 
         </div>
       </div>

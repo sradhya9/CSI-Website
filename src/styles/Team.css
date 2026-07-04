@@ -90,7 +90,7 @@ body {
 .teampage {
     text-align: center;
     padding: 50px 20px 100px 20px;
-    background: #000000;
+    background: transparent;
     min-height: 100vh;
     height: auto;
     color: white;
@@ -129,12 +129,14 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 .team-title-above {
     font-family: 'Sterion Regular', sans-serif;
     font-size: 3.5rem;
     margin-top: 110px;
     justify-content: center;
 }
+
 .team-title {
     font-family: 'Sterion Regular', sans-serif;
     font-size: 14rem;
@@ -184,8 +186,10 @@ body {
 
 .faculty .titles {
     width: min-content !important;
-    margin: 0 40px !important; /* Overrides the 95px inline styles */
-    line-height: 1.1; /* Keeps the stacked words close together */
+    margin: 0 40px !important;
+    /* Overrides the 95px inline styles */
+    line-height: 1.1;
+    /* Keeps the stacked words close together */
 }
 
 /* Team Member Card */
@@ -276,10 +280,12 @@ body {
         flex-direction: column;
         gap: 40px;
     }
+
     .faculty .titles {
         margin-left: 0 !important;
         margin-right: 0 !important;
-        order: -1; /* Puts the title above the member cards on tablet */
+        order: -1;
+        /* Puts the title above the member cards on tablet */
         width: 100% !important;
         text-align: center;
     }
@@ -287,6 +293,7 @@ body {
 
 /* Mobile Responsive Styles */
 @media screen and (max-width: 850px) {
+
     .thecreative,
     .theevent,
     .thecore,
@@ -334,7 +341,8 @@ body {
 
     .member-card {
         margin: 0 auto;
-        width: 250px; /* Same width as desktop */
+        width: 250px;
+        /* Same width as desktop */
         padding: 15px;
     }
 
@@ -345,15 +353,16 @@ body {
         width: 100%;
         max-width: 100%;
     }
-    
+
     .faculty {
         flex-direction: column;
     }
-    
+
     .faculty .titles {
         margin-left: 0 !important;
         margin-right: 0 !important;
-        order: -1; /* Puts the title above the member cards on mobile */
+        order: -1;
+        /* Puts the title above the member cards on mobile */
         width: 100%;
         text-align: center;
     }

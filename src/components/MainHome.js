@@ -4,6 +4,7 @@ import AboutCSI from "./AboutCSI";
 import EventBox from "./EventBox";
 import EventCarousel from "./EventCarousel";
 
+
 const MainHome = () => {
     return (
         <div>
