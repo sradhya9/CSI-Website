@@ -60,7 +60,7 @@ const Team = () => {
                                 <div className="member-card">
                                     <img src="/assets/krishnamiss.png" alt="Jane Smith" className="member-image" />
                                     <p className="member-name">Krishna L</p>
-                                    <p className="member-role">CSI Cordinator</p>
+                                    <p className="member-role">CSI Coordinator</p>
                                     <div className="social-links">
                                         <a href="https://www.instagram.com/krishnasuku16/" target="_blank" rel="noopener noreferrer" className="social-btn instagram">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 27 27" fill="none">

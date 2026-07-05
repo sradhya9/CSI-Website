@@ -49,9 +49,9 @@ const Header = () => {
                         <li className="dropdown">
                             <span className="dropdown-title">Events</span>
                             <ul className="dropdown-menu">
+                                <li><Link to="/events26">2026</Link></li>
                                 <li><Link to="/events25">2025</Link></li>
                                 <li><Link to="/events24">2024</Link></li>
-                                <li><Link to="/events23">2023</Link></li>
                             </ul>
                         </li>
                         <li className="dropdown">
@@ -89,9 +89,9 @@ const Header = () => {
                                 </div>
                                 {eventsOpen && (
                                     <ul className="mobile-dropdown-menu">
+                                        <li><Link to="/events26" onClick={() => setMenuOpen(false)}>2026</Link></li>
                                         <li><Link to="/events25" onClick={() => setMenuOpen(false)}>2025</Link></li>
                                         <li><Link to="/events24" onClick={() => setMenuOpen(false)}>2024</Link></li>
-                                        <li><Link to="/events23" onClick={() => setMenuOpen(false)}>2023</Link></li>
                                     </ul>
                                 )}
                             </li>

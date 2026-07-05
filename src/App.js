@@ -6,9 +6,9 @@ import ScrollToTop from "./components/ScrollToTop";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import MainHome from "./components/MainHome"; // Updated import
+import Events26 from "./components/Events26";
 import Events25 from "./components/Events25";
 import Events24 from "./components/Events24";
-import Events23 from "./components/Events23";
 import Team26 from "./components/Team26";
 import Team25 from "./components/Team25";
 import Software from "./components/Software";
@@ -44,12 +44,12 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<MainHome />} /> {/* Updated Route */}
-          <Route path="/events" element={<Navigate to="/events25" />} />
+          <Route path="/events" element={<Navigate to="/events26" />} />
+          <Route path="/events26" element={<Events26 />} />
           <Route path="/events25" element={<Events25 />} />
           <Route path="/events24" element={<Events24 />} />
-          <Route path="/events23" element={<Events23 />} />
           <Route path="/event/:eventId" element={<EventDetails />} />
-          <Route path="/team" element={<Navigate to="/team25" />} />
+          <Route path="/team" element={<Navigate to="/team26" />} />
           <Route path="/team26" element={<Team26 />} />
           <Route path="/team25" element={<Team25 />} />
           <Route path="/software" element={<Software />} />

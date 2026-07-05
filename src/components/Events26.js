@@ -6,44 +6,68 @@ import '../styles/Events.css';
 
 const events = [
     {
-        id: 'adastra',
-        title: 'AD ASTRA',
-        date: '01 FEBRUARY 2025',
+        id: 'beyond',
+        title: 'Beyond the Draft',
+        date: '29 JUNE 2026',
         description:
-            'The Department of Computer Science and Engineering, in association with CSI SB MBCET, is organizing Ad Astra, a month-long event aimed at enhancing and building a comprehensive skill set for every participant.',
+            'Beyond the Draft: A Guide to Effective Research Paper Writing, an online workshop organized by CSI SB MBCET, equipped students with essential research writing, IEEE formatting, and publication skills.',
         align: 'left',
     },
     {
-        id: 'software',
-        title: 'SOFTWARE',
-        date: '09 NOVEMBER 2024',
+        id: 'miniproject',
+        title: 'Mini Project Expo',
+        date: '27 APRIL 2026',
         description:
-            'Department of Computer Science and Engineering in association with CSI SB MBCET & ISTE SB MBCET , Mar Baselios College of Engineering and Technology, Thiruvananthapuram is organising an online workshop - Software Testing, An Industrial Approach',
+            'Mini Project Expo 2026, organized by CSI SB MBCET, the Department of Computer Science & Engineering, and ACE MBCET, showcased innovative student projects, fostering creativity, technical excellence, and industry interaction.',
         align: 'right',
     },
     {
-        id: 'radiance',
-        title: 'RADIANCE',
-        date: '28 SEPTEMBER 2024',
+        id: 'techexhibition',
+        title: 'Tech Exhibition',
+        date: '10 APRIL 2026',
         description:
-            'The Department of Computer Science and Engineering in association with CSI SB MBCET, successfully conducted Radiance, an engaging one-day event exclusively for first-year students, featuring interactive sessions, team activities, and networking opportunities.',
+            'Tech Exhibition 2026, the final year project expo organized by CSI SB MBCET, the Department of Computer Science & Engineering, and ACE MBCET, showcased innovative projects with expert industry evaluation.',
         align: 'left',
     },
     {
-        id: 'motivational',
-        title: 'MOTIVATIONAL',
-        date: '23 JUNE 2024',
+        id: 'gateway',
+        title: 'GATEway to Success',
+        date: '31 MARCH 2026',
         description:
-            'The Department of Computer Science and Engineering in association with CSI SB MBCET presents a Motivational Talk Session with Dr. Giby Geevarghese, Former Chairperson (2016-2019), Board of Studies in Education (UG), and Former Board of Studies Member (PG) at the University of Kerala.',
+            'GATEway to Success, organized by CSI SB MBCET, was an inspiring GATE guidance session that equipped students with effective preparation strategies, practical insights, and motivation for success.',
         align: 'right',
     },
     {
-        id: 'motivational2',
-        title: 'MOTIVATIONAL',
-        date: '23 JUNE 2024',
+        id: 'wallstreet',
+        title: 'Day At WallStreet',
+        date: '23 MARCH 2026',
         description:
-            'The Department of Computer Science and Engineering in association with CSI SB MBCET presents a Motivational Talk Session with Dr. Giby Geevarghese, Former Chairperson (2016-2019), Board of Studies in Education (UG), and Former Board of Studies Member (PG) at the University of Kerala.',
+            'A Day At WallStreet, a trading simulation competition organized by CSI SB MBCET and IEEE SB MBCET, introduced students to stock market trading through an engaging and strategic simulation.',
         align: 'left',
+    },
+    {
+        id: 'herthroughart',
+        title: 'Her through Art',
+        date: '01 MARCH 2026 - 08 MARCH 2026',
+        description:
+            'HER Through ART, a poster designing competition organized by CSI SB MBCET for International Women’s Day 2026, empowered students to celebrate women\'s strength, resilience, and equality through impactful artwork.',
+        align: 'right',
+    },
+    {
+        id: 'knackit3',
+        title: 'GitHub Essentials',
+        date: '22 FEBRUARY 2026',
+        description:
+            'KnackIt Episode 3: GitHub Essentials, organized by CSI SB MBCET, introduced students to Git and GitHub through an interactive, hands-on session, enhancing their version control and collaboration skills.',
+        align: 'left',
+    },
+    {
+        id: 'agm26',
+        title: 'Annual General Body Meeting',
+        date: '29 JANUARY 2026',
+        description:
+            'The CSI Student Branch Annual General Meeting 2026 reviewed the year\'s achievements, presented financial reports, recognized outgoing Execom members, and announced the new Execom for 2026–27.',
+        align: 'right',
     },
 ];
 
@@ -129,7 +153,17 @@ const EventsPage = () => {
                                 <div className="date-card right-align" data-aos="fade-right">
                                     <div className="date-wrapper">
                                         <CalendarIcon />
-                                        <span className="date-text">{event.date}</span>
+                                        <span className="date-text">
+                                            {event.date.includes('-') ? (
+                                                <>
+                                                    {event.date.split('-')[0]}
+                                                    <span style={{ fontFamily: 'sans-serif' }}>-</span>
+                                                    {event.date.split('-')[1]}
+                                                </>
+                                            ) : (
+                                                event.date
+                                            )}
+                                        </span>
                                     </div>
                                     <div className="dashed-line"></div>
                                 </div>
@@ -156,7 +190,17 @@ const EventsPage = () => {
                                     <div className="dashed-line"></div>
                                     <div className="date-wrapper">
                                         <CalendarIcon />
-                                        <span className="date-text">{event.date}</span>
+                                        <span className="date-text">
+                                            {event.date.includes('-') ? (
+                                                <>
+                                                    {event.date.split('-')[0]}
+                                                    <span style={{ fontFamily: 'sans-serif' }}>-</span>
+                                                    {event.date.split('-')[1]}
+                                                </>
+                                            ) : (
+                                                event.date
+                                            )}
+                                        </span>
                                     </div>
                                 </div>
                             )}
