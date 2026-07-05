@@ -48,10 +48,11 @@ export const eventsData = {
       <>
         Beyond the Draft: A Guide to Effective Research Paper Writing, an online workshop organized by CSI SB MBCET, equipped students with essential research writing, IEEE formatting, and publication skills.
       </>
-    )
+    ),
+    registrationLink: "https://docs.google.com/forms/d/e/...",
   },
   miniproject: {
-    title: "Mini Project Expo ‘26",
+    title: "Mini Project Expo",
     image: "/assets/miniproj.png",
     description: (
       <>
@@ -64,7 +65,7 @@ export const eventsData = {
     )
   },
   techexhibition: {
-    title: "Tech Exhibition 2026",
+    title: "Tech Exhibition",
     image: "/assets/techexhibition.png",
     description: (
       <>
@@ -120,7 +121,7 @@ export const eventsData = {
     )
   },
   knackit3: {
-    title: "KnackIt: 03- GitHub Essentials",
+    title: "GitHub Essentials",
     image: "/assets/github.png",
     description: (
       <>
@@ -133,7 +134,7 @@ export const eventsData = {
     )
   },
   agm26: {
-    title: "Annual General Body Meeting'26",
+    title: "Annual General Body Meeting",
     image: "/assets/agm26.png",
     description: (
       <>

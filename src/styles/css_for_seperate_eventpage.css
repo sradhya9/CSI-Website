@@ -94,7 +94,30 @@
 @media (max-width: 768px) {
   .event-content-wrapper {
     flex-direction: column;
-    padding: 80px 10px 40px;
+    padding: 120px 10px 40px;
+  }
+
+  .event-text-content {
+    display: contents;
+  }
+
+  .event-title-and-button {
+    order: 1;
+    justify-content: center;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .event-image_event {
+    order: 2;
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .event-description-text {
+    order: 3;
+    font-size: 0.9rem;
+    padding: 0 10px;
   }
 
   .event-title {
@@ -103,16 +126,8 @@
     width: 100%;
   }
 
-  .event-title-and-button {
-    justify-content: center;
-  }
-
   .event-main-image {
     max-width: 300px;
-  }
-
-  .event-description-text {
-    font-size: 0.9rem;
   }
 }
 

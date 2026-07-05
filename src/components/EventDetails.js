@@ -52,7 +52,15 @@ const EventDetails = () => {
                 <div className="event-text-content">
                     <div className="event-title-and-button">
                         <h1 className="event-title" data-aos="fade-left">{event.title}</h1>
-                        <button className="register-button" data-aos="fade-left">Register Now</button>
+                        {event.registrationLink && (
+                            <button 
+                                className="register-button" 
+                                data-aos="fade-left"
+                                onClick={() => window.open(event.registrationLink, '_blank', 'noopener,noreferrer')}
+                            >
+                                Register Now
+                            </button>
+                        )}
                     </div>
                     <p className="event-description-text" data-aos="fade-left">
                         {event.description}
