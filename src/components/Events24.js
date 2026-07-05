@@ -6,44 +6,36 @@ import '../styles/Events.css';
 
 const events = [
     {
-        id: 'adastra',
-        title: 'AD ASTRA',
-        date: '01 FEBRUARY 2025',
+        id: 'knackit1',
+        title: 'KnackIt – Episode 1: Build Your Resume',
+        date: '19 DECEMBER 2024',
         description:
-            'The Department of Computer Science and Engineering, in association with CSI SB MBCET, is organizing Ad Astra, a month-long event aimed at enhancing and building a comprehensive skill set for every participant.',
+            'A practical skill-building session held on 19 Dec 2024, led by Ms. Varsha Renjith, focused on crafting impactful resumes to help students stand out to recruiters.',
         align: 'left',
     },
     {
-        id: 'software',
-        title: 'SOFTWARE',
+        id: 'lensmaster24',
+        title: 'LensMaster\'24',
+        date: '01 DECEMBER 2024',
+        description:
+            'A state-level creative photography and visual arts competition held on 01 Dec 2024, celebrating student talent and artistic expression.',
+        align: 'right',
+    },
+    {
+        id: 'softwaretesting',
+        title: 'Software Testing – An Industrial Approach',
         date: '09 NOVEMBER 2024',
         description:
-            'Department of Computer Science and Engineering in association with CSI SB MBCET & ISTE SB MBCET , Mar Baselios College of Engineering and Technology, Thiruvananthapuram is organising an online workshop - Software Testing, An Industrial Approach',
-        align: 'right',
-    },
-    {
-        id: 'radiance',
-        title: 'RADIANCE',
-        date: '28 SEPTEMBER 2024',
-        description:
-            'The Department of Computer Science and Engineering in association with CSI SB MBCET, successfully conducted Radiance, an engaging one-day event exclusively for first-year students, featuring interactive sessions, team activities, and networking opportunities.',
+            'An industry-focused workshop on software testing methodologies, tools, and industrial practices led by Ms. Shalini L, an Associate Consultant at Infosys on 09th November 2024.',
         align: 'left',
     },
     {
-        id: 'motivational',
-        title: 'MOTIVATIONAL',
-        date: '23 JUNE 2024',
+        id: 'highered',
+        title: 'Higher Education Prospects',
+        date: '31 JULY 2024',
         description:
-            'The Department of Computer Science and Engineering in association with CSI SB MBCET presents a Motivational Talk Session with Dr. Giby Geevarghese, Former Chairperson (2016-2019), Board of Studies in Education (UG), and Former Board of Studies Member (PG) at the University of Kerala.',
+            'Held on 31 Jul 2024, this was an insightful session on higher education opportunities featuring expert guidance from Mr. Aswin P Chandran and Dr. Jayaram V.',
         align: 'right',
-    },
-    {
-        id: 'motivational2',
-        title: 'MOTIVATIONAL',
-        date: '23 JUNE 2024',
-        description:
-            'The Department of Computer Science and Engineering in association with CSI SB MBCET presents a Motivational Talk Session with Dr. Giby Geevarghese, Former Chairperson (2016-2019), Board of Studies in Education (UG), and Former Board of Studies Member (PG) at the University of Kerala.',
-        align: 'left',
     },
 ];
 

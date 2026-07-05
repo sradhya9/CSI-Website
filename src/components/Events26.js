@@ -69,6 +69,14 @@ const events = [
             'The CSI Student Branch Annual General Meeting 2026 reviewed the year\'s achievements, presented financial reports, recognized outgoing Execom members, and announced the new Execom for 2026–27.',
         align: 'right',
     },
+    {
+        id: 'aiunleashed',
+        title: 'AI Unleashed',
+        date: 'JANUARY 2026',
+        description:
+            'Held in January 2026, this multi-faceted online AI technical fest featured specialized sub-events like Neural Canvas, Think Trace, and ScriptShift, designed to provide students with an immersive platform to explore the frontiers of generative AI, logical reasoning, and complex technical problem-solving.',
+        align: 'left',
+    },
 ];
 
 const CalendarIcon = () => (
