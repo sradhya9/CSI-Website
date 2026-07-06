@@ -305,7 +305,7 @@ export const eventsData = {
   },
   lensmaster25: {
     title: "Lensmaster",
-    image: "/assets/lensmaster.png",
+    image: "/assets/lensmaster25.png",
     description: (
       <>
         The winter edition of "Lensmaster," held from 10 - 31 Dec 2025, was a state-level online photography event that invited students to submit their best photographic works over a multi-week window. Designed to foster visual creativity and storytelling, the competition provided a platform for students to express unique perspectives through their cameras. Conducted entirely online, the event concluded with a comprehensive review of submissions, celebrating technical excellence, thematic relevance, and artistic composition among the participants.

@@ -20,20 +20,6 @@ const events = [
         align: 'right',
     },
     {
-        id: 'fdp',
-        title: 'Faculty Development Programme',
-        date: '01 – 06 DECEMBER 2025',
-        description: 'A comprehensive week-long faculty development initiative held from 1 - 6 Dec 2025, aimed at enhancing pedagogical skills and technical expertise.',
-        align: 'left',
-    },
-    {
-        id: 'javadev',
-        title: 'Java Development – An Industry Approach',
-        date: '16 OCTOBER 2025',
-        description: 'An online technical session on 16 Oct 2025, focused on modern Java development frameworks and enterprise application practices.',
-        align: 'right',
-    },
-    {
         id: 'figma',
         title: 'Engineering 101 – Intro to Figma',
         date: '11 OCTOBER 2025',
