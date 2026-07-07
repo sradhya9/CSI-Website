@@ -222,7 +222,7 @@ const Team = () => {
                                         </div>
                                     </div>
                                     <div className="member-card">
-                                        <img src="/assets/kiran.png" alt="Jane Smith" className="member-image" />
+                                        <img src="/assets/aman.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Aman Khan</p>
                                         <p className="member-role">Treasurer</p>
                                         <div className="social-links">
@@ -476,7 +476,7 @@ const Team = () => {
                                         </div>
                                     </div>
                                     <div className="member-card">
-                                        <img src="/assets/noel.png" alt="Jane Smith" className="member-image" />
+                                        <img src="/assets/nehasara.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Neha Sara Binu</p>
                                         <p className="member-role">Content Curator</p>
                                         <div className="social-links">
@@ -526,7 +526,7 @@ const Team = () => {
                                         </div>
                                     </div>
                                     <div className="member-card">
-                                        <img src="/assets/afroz.png" alt="Jane Smith" className="member-image" />
+                                        <img src="/assets/krishnaveni.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Krishnaveni Deepak</p>
                                         <p className="member-role">Operations Sub-Head</p>
                                         <div className="social-links">
@@ -548,7 +548,7 @@ const Team = () => {
                                         </div>
                                     </div>
                                     <div className="member-card">
-                                        <img src="/assets/devnandan.png" alt="Jane Smith" className="member-image" />
+                                        <img src="/assets/advaith.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Adwaith Ramesh</p>
                                         <p className="member-role">Event Strategist</p>
                                         <div className="social-links">
@@ -570,7 +570,7 @@ const Team = () => {
                                         </div>
                                     </div>
                                     <div className="member-card">
-                                        <img src="/assets/nihal.png" alt="Jane Smith" className="member-image" />
+                                        <img src="/assets/adithya.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Adithya Ajith S</p>
                                         <p className="member-role">Event Organizer</p>
                                         <div className="social-links">
@@ -592,7 +592,7 @@ const Team = () => {
                                         </div>
                                     </div>
                                     <div className="member-card">
-                                        <img src="/assets/nihal.png" alt="Jane Smith" className="member-image" />
+                                        <img src="/assets/nandinip.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Nandini P Nair</p>
                                         <p className="member-role">Concept Designer</p>
                                         <div className="social-links">
@@ -644,7 +644,7 @@ const Team = () => {
                                         </div>
                                     </div>
                                     <div className="member-card">
-                                        <img src="/assets/nivedh.png" alt="Jane Smith" className="member-image" />
+                                        <img src="/assets/anjana.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Anjana Jyothish K</p>
                                         <p className="member-role">Marketing Planner</p>
                                         <div className="social-links">
@@ -666,7 +666,7 @@ const Team = () => {
                                         </div>
                                     </div>
                                     <div className="member-card">
-                                        <img src="/assets/nivedh.png" alt="Jane Smith" className="member-image" />
+                                        <img src="/assets/niya.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Niya Tessa Jose</p>
                                         <p className="member-role">Marketing Planner</p>
                                         <div className="social-links">
@@ -688,7 +688,7 @@ const Team = () => {
                                         </div>
                                     </div>
                                     <div className="member-card">
-                                        <img src="/assets/leslie.png" alt="Jane Smith" className="member-image" />
+                                        <img src="/assets/aptha.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Aptha N M</p>
                                         <p className="member-role">Marketing Strategist</p>
                                         <div className="social-links">
@@ -738,7 +738,7 @@ const Team = () => {
                                         </div>
                                     </div>
                                     <div className="member-card">
-                                        <img src="/assets/nivedh.png" alt="Jane Smith" className="member-image" />
+                                        <img src="/assets/nashlie.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Nashlie Mary Ajith</p>
                                         <p className="member-role">Outreach & PR Sub-Head</p>
                                         <div className="social-links">
@@ -760,7 +760,7 @@ const Team = () => {
                                         </div>
                                     </div>
                                     <div className="member-card">
-                                        <img src="/assets/leslie.png" alt="Jane Smith" className="member-image" />
+                                        <img src="/assets/tessa.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Tessa Ann Joseph</p>
                                         <p className="member-role">Outreach Expert</p>
                                         <div className="social-links">
@@ -782,7 +782,7 @@ const Team = () => {
                                         </div>
                                     </div>
                                     <div className="member-card">
-                                        <img src="/assets/leslie.png" alt="Jane Smith" className="member-image" />
+                                        <img src="/assets/isabel.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Isabel Mary Manoj</p>
                                         <p className="member-role">PR Officer</p>
                                         <div className="social-links">
@@ -809,7 +809,7 @@ const Team = () => {
                                 <div><h1 className="titles-market">NextGen Squad</h1></div>
                                 <div className="members-card-creative">
                                     <div className="member-card">
-                                        <img src="/assets/shibin.png" alt="Jane Smith" className="member-image" />
+                                        <img src="/assets/anagha.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Anagha S</p>
                                         <p className="member-role">Nextgen Squad</p>
                                         <div className="social-links">
@@ -831,7 +831,7 @@ const Team = () => {
                                         </div>
                                     </div>
                                     <div className="member-card">
-                                        <img src="/assets/shibin.png" alt="Jane Smith" className="member-image" />
+                                        <img src="/assets/dani.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Dani Thomas George</p>
                                         <p className="member-role">Nextgen Squad</p>
                                         <div className="social-links">
@@ -853,7 +853,7 @@ const Team = () => {
                                         </div>
                                     </div>
                                     <div className="member-card">
-                                        <img src="/assets/shibin.png" alt="Jane Smith" className="member-image" />
+                                        <img src="/assets/deon.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Deon Dan Dixen</p>
                                         <p className="member-role">Nextgen Squad</p>
                                         <div className="social-links">
@@ -875,7 +875,7 @@ const Team = () => {
                                         </div>
                                     </div>
                                     <div className="member-card">
-                                        <img src="/assets/shibin.png" alt="Jane Smith" className="member-image" />
+                                        <img src="/assets/govind.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Govind S</p>
                                         <p className="member-role">Nextgen Squad</p>
                                         <div className="social-links">
@@ -897,7 +897,7 @@ const Team = () => {
                                         </div>
                                     </div>
                                     <div className="member-card">
-                                        <img src="/assets/shibin.png" alt="Jane Smith" className="member-image" />
+                                        <img src="/assets/swaroop.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Swaroop B</p>
                                         <p className="member-role">Nextgen Squad</p>
                                         <div className="social-links">
@@ -924,7 +924,7 @@ const Team = () => {
                                 <div><h1 className="titles-market">Elite Squad</h1></div>
                                 <div className="members-card-creative">
                                     <div className="member-card">
-                                        <img src="/assets/shibin.png" alt="Jane Smith" className="member-image" />
+                                        <img src="/assets/aneya.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Aneya Alin</p>
                                         <p className="member-role">Elite Squad</p>
                                         <div className="social-links">
@@ -946,7 +946,7 @@ const Team = () => {
                                         </div>
                                     </div>
                                     <div className="member-card">
-                                        <img src="/assets/shibin.png" alt="Jane Smith" className="member-image" />
+                                        <img src="/assets/himani.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Himani S</p>
                                         <p className="member-role">Elite Squad</p>
                                         <div className="social-links">
@@ -968,7 +968,7 @@ const Team = () => {
                                         </div>
                                     </div>
                                     <div className="member-card">
-                                        <img src="/assets/shibin.png" alt="Jane Smith" className="member-image" />
+                                        <img src="/assets/niranjana.png" alt="Jane Smith" className="member-image" />
                                         <p className="member-name">Niranjana R</p>
                                         <p className="member-role">Elite Squad</p>
                                         <div className="social-links">
