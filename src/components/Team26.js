@@ -57,7 +57,7 @@ const Team = () => {
 
                                 {/* Team Member 2 */}
                                 <div className="member-card">
-                                    <img src="/assets/krishnamiss.png" alt="Jane Smith" className="member-image" />
+                                    <img src="/assets/diana.png" alt="Jane Smith" className="member-image" />
                                     <p className="member-name">Diana Mathew</p>
                                     <p className="member-role">CSI Coordinator</p>
                                     <div className="social-links">
